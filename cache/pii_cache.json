@@ -1,0 +1,30 @@
+{
+  "80cb86a7b5b887d818760078dd59750c": {
+    "masked": "[full_name]_008942 at [email]_8f6e96 or [aadhar_num]_2cce05-5432. [full_name]_9e2491 is [aadhar_num]_799b6e and DOB is [dob]_e2ead1.",
+    "findings": {
+      "full_name": [
+        "Contact John Doe",
+        "His Aadhar"
+      ],
+      "email": [
+        "john.doe@email.com"
+      ],
+      "dob": [
+        "01/01/1990"
+      ],
+      "aadhar_num": [
+        "1234-5678-9876",
+        "1234 5678 9012"
+      ],
+      "credit_debit_no": [
+        "1234-5678-9876-5432"
+      ],
+      "expiry_no": [
+        "1234",
+        "1234",
+        "0101"
+      ]
+    },
+    "expires": "2025-04-19T16:35:55.618547"
+  }
+}
