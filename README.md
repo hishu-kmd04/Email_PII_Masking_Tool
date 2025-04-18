@@ -108,9 +108,5 @@ Mahammad Hishan K M
 
 ### License
 MIT License
-``` bash
 
----
 
-You can now copy this entire block and save it as `README.md` in your project folder. Let me know if you want help updating the GitHub repo or generating `requirements.txt` next.
-```
