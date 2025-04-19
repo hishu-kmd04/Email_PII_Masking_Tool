@@ -109,7 +109,7 @@ Email_Clasification/
 ## Deployment
 The application is deployed on Hugging Face Spaces using Gradio + FastAPI.
 
-📡 URL: https://hishn12-email-classification.hf.space
+📡 URL: https://hishn12-email-classification-without-llm.hf.space/?__theme=system
 
 ## Authors
 Mahammad Hishan K M
