@@ -16,23 +16,20 @@ The entire pipeline is deployed as a public API via **Hugging Face Spaces**.
 - Uses **Regex** and **NER (spaCy)** for masking.
 - Fields masked:
   - `full_name`, `email`, `phone_number`, `dob`, `aadhar_num`, `credit_debit_no`, `cvv_no`, `expiry_no`
-- Example:
-
-
 
 ### 🧠 Email Classification
 - Classifies emails into categories like:
-- Billing Issues
-- Technical Support
-- Account Management
+  - Billing Issues
+  - Technical Support
+  - Account Management
 - Uses traditional ML or LLM models (e.g. BERT) **only for classification**.
 
 ### 🌐 API Interface
 - Built with **FastAPI**
 - Accepts raw email text and returns:
-- Masked email
-- Original PII data and positions
-- Classified category
+  - Masked email
+  - Original PII data and positions
+  - Classified category
 
 ---
 
@@ -71,47 +68,55 @@ POST /mask_email
 }
 ```
 
-### Installation & Setup
-``` bash
-git clone https://github.com/your-username/email-pii-mask-classifier
-cd email-pii-mask-classifier
+---
 
-# Create a virtual environment
+## 🛠️ Installation & Setup
+```bash
+git clone https://github.com/hishu-kmd04/Email_PII_Masking_Tool.git
+cd Email_PII_Masking_Tool
+
+# Create virtual environment
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\\Scripts\\activate
+source venv/bin/activate  # Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Run the API locally
+# Train the classifier (once)
+python -c "from models import train_model; train_model()"
+
+# Run main
 python main.py
 ```
 
-### Project Structure
+---
+
+## 📁 Project Structure
 ```bash
-Email_Clasification/
-├── __pycache__/
-├── cache/
-├── .env.example
-├── __init__.py
+Email_PII_Masking_Tool/
+├── api.py
 ├── cache_manager.py
-├── config.py
 ├── detector.py
 ├── logger.py
 ├── main.py                 ← This replaces `app.py`
 ├── masker.py
+├── models.py
 ├── README.md
 ├── requirements.txt
 ├── text_processor.py
-├── utils.py               
+├── utils.py
 ├── validator.py
-
+└── combined_emails_with_natural_pii.csv
 ```
 
-## Deployment
+---
+
+## 🚀 Deployment
 The application is deployed on Hugging Face Spaces using Gradio + FastAPI.
 
-📡 URL: https://hishn12-email-classification-without-llm.hf.space/?__theme=system
+📡 **URL**: https://hishn12-email-classification-without-llm.hf.space/?__theme=system
+
+---
 
 ## 👨‍💻 Author
 - GitHub: [@hishu-kmd04](https://github.com/hishu-kmd04)
@@ -124,6 +129,5 @@ MIT
 
 ---
 
-Need help or feedback? Feel free to raise an issue
-
+Need help or feedback? Feel free to raise an issue 🚀
 
