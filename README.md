@@ -87,15 +87,23 @@ python app.py
 
 ### Project Structure
 ```bash
-.
-├── app.py              # Main API entry point
-├── api.py              # API route handler
-├── models.py           # ML model logic
-├── utils.py            # PII masking & helper functions
-├── requirements.txt
+Email_Clasification/
+├── __pycache__/
+├── cache/
+├── .env.example
+├── __init__.py
+├── cache_manager.py
+├── config.py
+├── detector.py
+├── logger.py
+├── main.py                 ← This replaces `app.py`
+├── masker.py
 ├── README.md
-└── data/
-    └── support_emails.csv
+├── requirements.txt
+├── text_processor.py
+├── utils.py               
+├── validator.py
+
 ```
 
 ## Deployment
