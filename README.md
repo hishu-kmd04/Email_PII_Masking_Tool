@@ -113,10 +113,17 @@ The application is deployed on Hugging Face Spaces using Gradio + FastAPI.
 
 📡 URL: https://hishn12-email-classification-without-llm.hf.space/?__theme=system
 
-## Author
-Mahammad Hishan K M
+## 👨‍💻 Author
+- GitHub: [@hishu-kmd04](https://github.com/hishu-kmd04)
+- Email: `hishankmd12@gmail.com`
 
-### License
-MIT License
+---
+
+## ✅ License
+MIT
+
+---
+
+Need help or feedback? Feel free to raise an issue
 
 
