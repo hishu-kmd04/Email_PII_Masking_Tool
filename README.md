@@ -6,7 +6,7 @@ This project implements a secure and accurate **email classification system** fo
 
 The entire pipeline is deployed as a public API via **Hugging Face Spaces**.
 
-🚀 **Live Demo**: [Click Here](https://hishn12-email-classification.hf.space)
+🚀 **Live Demo**: [Click Here](https://hishn12-email-classification-without-llm.hf.space/?__theme=system)
 
 ---
 
