@@ -25,7 +25,7 @@ The entire pipeline is deployed as a public API via **Hugging Face Spaces**.
 - Billing Issues
 - Technical Support
 - Account Management
-- Uses traditional ML or LLM models (e.g. BERT) **only for classification** (compliant with assignment).
+- Uses traditional ML or LLM models (e.g. BERT) **only for classification**.
 
 ### 🌐 API Interface
 - Built with **FastAPI**
@@ -36,7 +36,7 @@ The entire pipeline is deployed as a public API via **Hugging Face Spaces**.
 
 ---
 
-## API Format (Strictly Follows Assignment Specs)
+## API Format 
 
 **POST** request  
 **Endpoint:** `/predict`  
