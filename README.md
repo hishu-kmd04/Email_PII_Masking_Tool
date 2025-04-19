@@ -84,7 +84,7 @@ source venv/bin/activate  # On Windows: venv\\Scripts\\activate
 pip install -r requirements.txt
 
 # Run the API locally
-python app.py
+python main.py
 ```
 
 ### Project Structure
