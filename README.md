@@ -36,36 +36,38 @@ The entire pipeline is deployed as a public API via **Hugging Face Spaces**.
 
 ---
 
-## API Format 
+## 📬 API Format (Strictly Required)
 
-**POST** request  
-**Endpoint:** `/predict`  
-**Content-Type:** `application/json`
+### 🔸 Endpoint
+```
+POST /mask_email
+```
 
-### 🔽 Input
+### 🔸 Input JSON
 ```json
 {
-"email_body": "Hello, my name is Jane Doe. My phone is 9876543210."
+  "email_body": "My name is John Doe. My Aadhar is 1234 5678 9012."
 }
 ```
-### Output
-```bash
+
+### 🔸 Output JSON
+```json
 {
-  "input_email_body": "Hello, my name is Jane Doe. My phone is 9876543210.",
+  "input_email_body": "My name is John Doe...",
   "list_of_masked_entities": [
     {
-      "position": [21, 29],
+      "position": [11, 19],
       "classification": "full_name",
-      "entity": "Jane Doe"
+      "entity": "John Doe"
     },
     {
-      "position": [43, 53],
-      "classification": "phone_number",
-      "entity": "9876543210"
+      "position": [35, 51],
+      "classification": "aadhar_num",
+      "entity": "1234 5678 9012"
     }
   ],
-  "masked_email": "Hello, my name is [full_name]. My phone is [phone_number].",
-  "category_of_the_email": "Technical Support"
+  "masked_email": "My name is [full_name]_123abc. My Aadhar is [aadhar_num]_456def.",
+  "category_of_the_email": "N/A"
 }
 ```
 
