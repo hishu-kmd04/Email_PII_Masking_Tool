@@ -36,7 +36,7 @@ The entire pipeline is deployed as a public API via **Hugging Face Spaces**.
 
 ---
 
-## 📬 API Format (Strictly Required)
+## 📬 API Format
 
 ### 🔸 Endpoint
 ```
